@@ -1,0 +1,61 @@
+body {
+    background-image: url("/static/Images/pexels-marek-piwnicki-3907296-9202340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#saat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+#saat:hover {
+    transform: scale(1.2);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    right: 500px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}

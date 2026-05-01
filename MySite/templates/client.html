@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='client.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Get the client</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Get the client</h3>
+    </div>
+
+    <a href="{{ url_for('home') }}">
+        <img src="static/images/ChatGPT Image 22 Nis 2026 17_11_26.png" alt="Go back button">
+    </a>
+
+
+    <div class="kutua">
+        <h4>Exe version</h4>
+    </div>
+    <div class="kutu">
+        <h4>Source code version(python)</h4>
+    </div>
+    
+    <div id="saat"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

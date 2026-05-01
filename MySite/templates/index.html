@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h3><a href="{{ url_for('about') }}">About me</a></h3>
+        <h3><a href="{{ url_for('client') }}">Get the client</a></h3>
+        <h3><a href="{{ url_for('client_info') }}">Client information</a></h3>
+        <a href="https://github.com/attilakockar-dot" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <!-- spacer -->
+    <div style="height: 80px;"></div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="card">
+            <h2>Project Overview</h2>
+            <h4>
+                <strong>Purpose:</strong> Educational and demonstration use only.<br><br>
+                This project is designed to help users understand:
+                <span>client-server architecture</span>,
+                <span>secure communication</span>,
+                and <span>remote command handling</span>
+                in a controlled environment.
+            </h4>
+        </div>
+        <div class="card">
+            <h2>Important Notice</h2>
+            <h4>
+                <strong>Warning:</strong><br>
+                It is not recommended to run this software on your personal or primary system.<br>
+                Always use a <span>virtual machine</span> or controlled test environment.
+            </h4>
+        </div>
+
+        <div class="card">
+            <h2>How It Works</h2>
+            <h4>
+                The system is built using <span>socket-based communication</span> between a client and a server.<br>
+                Communication is secured with <span>SSL encryption</span>.<br><br>
+
+                The client continuously listens for commands sent by the server and executes them in real time.
+            </h4>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <h4>
+                ✔ Execute shell commands<br>
+                ✔ Navigate directories (cd operations)<br>
+                ✔ Retrieve system information<br>
+                ✔ Secure socket communication (SSL)<br>
+                ✔ Real-time command handling
+            </h4>
+        </div>
+
+        <div class="card">
+            <h2>Technologies Used</h2>
+            <h4>
+                • Python<br>
+                • Socket Programming<br>
+                • SSL Encryption
+            </h4>
+        </div>
+
+        <div class="card">
+            <h2>Security & Ethical Use</h2>
+            <h4>
+                This project is strictly intended for <span>educational purposes</span>.<br>
+                Only run it on systems you <strong>own</strong> or have permission to test.
+            </h4>
+        </div>
+
+        <div class="card">
+            <h2>Disclaimer</h2>
+            <h4>
+                Unauthorized use of this software is <strong>strictly discouraged</strong> and may be illegal.
+            </h4>
+        </div>
+    </main>
+
+    <div id="saat"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
